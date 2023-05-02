@@ -1,0 +1,445 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="css/styles.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+ 
+
+</head>
+
+
+
+
+<body>
+
+    <div class= "header">  
+            <div class="nav1">
+            <a href="index.html"><img src="img/swiggy2.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#"> SEARCH</i></a></li>
+                        <li><a href="#"> HELP </a></li>
+                        <li><a href="#"> SIGN-IN
+                        
+                        
+                        <li><a href="#"> CART </a></li>
+                        <li><a href="#">ACCOUNT </a></li>
+                    </ul> 
+                </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </div>
+        <hr>
+        
+      </div>
+
+
+
+   
+   
+    <div class="wrapper">
+        <div class="left">
+
+            <h1 class="btext">Order Food Online in Bangalore
+            </h1>
+        </div>
+        <div class="right">
+             <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1002,h_600/v1678428358/portal/m/seo_web/dweb_header" width="370px" height="200px">
+        </div>
+       
+      </div>
+
+    
+<h1 class="gridtext">What's on your mind?</h1>
+      <div class="grid-container">
+        <div class="item"><a href="#"><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_160,h_192/v1675667625/PC_Creative%20refresh/Biryani_2"></a></div>
+        <div class="item"><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_160,h_192/v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Burger"></div>
+        <div class="item"><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_160,h_192/v1674029856/PC_Creative%20refresh/3D_bau/banners_new/Pizza"></div>
+        <div class="item"><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_160,h_192/v1674029858/PC_Creative%20refresh/3D_bau/banners_new/Rolls"></div>
+        <div class="item"><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_160,h_192/v1675667625/PC_Creative%20refresh/North_Indian_4"></div>
+        <div class="item"><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_160,h_192/v1674029848/PC_Creative%20refresh/3D_bau/banners_new/Chinese"></div>
+        <div class="item"><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_160,h_192/v1675667626/PC_Creative%20refresh/South_Indian_4"></div>
+        
+       
+      </div>
+
+
+   <script>
+    const carousel = document.querySelector(".carousel");
+const cards = document.querySelectorAll(".card");
+const cardWidth = cards[0].offsetWidth + 10; // include margin
+
+let index = 0;
+let translateX = 0;
+
+function slideNext() {
+  index++;
+  if (index > cards.length - 5) {
+    index = 0;
+    translateX = 0;
+  } else {
+    translateX -= cardWidth;
+  }
+  carousel.style.transform = `translateX(${translateX}px)`;
+}
+
+function slidePrev() {
+  index--;
+  if (index < 0) {
+    index = cards.length - 5;
+    translateX = -index * cardWidth;
+  } else {
+    translateX += cardWidth;
+  }
+  carousel.style.transform = `translateX(${translateX}px)`;
+}
+
+setInterval(slideNext, 3000); // automatic sliding every 3 seconds
+
+// add event listeners to navigation buttons
+document.querySelector(".carousel-next").addEventListener("click", slideNext);
+document.querySelector(".carousel-prev").addEventListener("click", slidePrev);
+
+   </script>
+   
+   <hr class="hrc">
+   
+   <h1 class="gridtext">Restaurants with online food delivery in Bangalore</h1>
+<div class="product-list">
+  
+  <div class="product">
+    <a href="#">
+    <img src="img/2.webp" alt="Product 1">
+    <h3>KFC</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.1</p>
+    <p>Burgers, Biryani, American, Snacks, Fast Food </p>
+    <p>Banashankari </p>
+  </a>
+    
+  </div>
+  
+  <div class="product">
+    <img src="img/3.webp" alt="Product 2">
+    <h3>McDonald's</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.1</p>
+    <p>Burgers, Beverages, Cafe, Desserts</p>
+    <p>Banashankari</p>
+    
+  </div>
+  
+  <div class="product">
+    <img src="img/4.webp" alt="Product 3">
+    <h3>Wendy's</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 3.8</p>
+    <p>American, Burgers, Fast Food, Beverages, Snacks</p>
+    <p>Central Bangalore</p>
+  </div>
+  <div class="product">
+    <img src="img/6.jpeg" alt="Product 3">
+    <h3>Bakingo</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.3</p>
+    <p>Bakery, Desserts, Beverages, Snacks</p>
+    <p>Vasanth Nagar</p>
+  </div>
+  <div class="product">
+    <img src="img/7.webp" alt="Product 3">
+    <h3>Bakingo</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.3</p>
+    <p>Bakery, Desserts, Beverages, Snacks</p>
+    <p>Vasanth Nagar</p>
+  </div>
+  <div class="product">
+    <img src="img/8.jpeg" alt="Product 3">
+    <h3>Social</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.5</p>
+    <p>Pizzas, Fast Food, Italian</p>
+    <p>Jayanagar</p>
+  </div>
+  <div class="product">
+    <img src="img/9.webp" alt="Product 3">
+    <h3> Savoury Seashell Restaurant</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 3.9</p>
+    <p>Arabian, Indian, Chinese, Tandoor, Biryani, Seafood, Kerala</p>
+    <p>Bannerghatta Main Road</p>
+  </div>
+  
+  <div class="product">
+    <img src="img/10.webp" alt="Product 3">
+    <h3>  TEXAS BURGERS</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 3.9</p>
+    <p>Arabian, Indian, Chinese, Tandoor, Biryani, Seafood, Kerala</p>
+    <p>BTM Layout</p>
+  </div>
+  <div class="product">
+    <img src="img/11.webp" alt="Product 3">
+    <h3>Late Night</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.2</p>
+    <p> Biryani, North Indian, Chinese</p>
+    <p>BTM</p>
+  </div>
+
+  
+
+
+  <div class="product">
+    <img src="img/12.webp" alt="Product 3">
+    <h3>Hot Burger Company</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 3.9</p>
+    <p>Bakery, Snacks</p>
+    <p>Koramangala</p>
+  </div>
+  <div class="product">
+    <img src="img/13.webp" alt="Product 3">
+    <h3>Kitchens of Punjab</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.5</p>
+    <p>Punjabi, North Indian, Thalis, Desserts, Beverages</p>
+    <p>Bannerghatta Main Road</p>
+  </div>
+
+  
+  <div class="product">
+    <img src="img/22.webp" alt="Product 3">
+    <h3>Pipabu</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 3.7</p>
+    <p>Pizzas, Italian, American, Continental, Salads, Desserts
+    </p>
+    <p>Koramangala Main Road</p>
+  </div>
+  
+  <div class="product">
+    <img src="img/23.webp" alt="Product 3">
+    <h3>Dimond</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.2</p>
+    <p>Arabian, Indian, Chinese, Tandoor, Biryani, Seafood, Kerala</p>
+    <p>Bannerghatta Main Road</p>
+  </div>
+  
+  <div class="product">
+    <img src="img/16.webp" alt="Product 3">
+    <h3>Biryani house</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 3.9</p>
+    <p>Biryani, North Indian, Chinese</p>
+    <p>Koramangala Main Road</p>
+
+  </div>
+  <div class="product">
+    <img src="img/18.webp" alt="Product 3">
+    <h3>CC base</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 3.5</p>
+    <p>Arabian, Indian, Chinese, Tandoor, Biryani, Seafood, Kerala</p>
+    <p>Jayanagar</p>
+  </div><div class="product">
+    <img src="img/19.webp" alt="Product 3">
+    <h3>kong kong Burger</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.9</p>
+    <p>Burgers, Beverages, Cafe, Desserts</p>
+    <p>BTM</p>
+  </div>
+  <div class="product">
+    <img src="img/20.webp" alt="Product 3">
+    <h3>Cs Ice cream</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 3.9</p>
+    <p>Bakery, Desserts, Beverages, Snacks</p>
+    <p>Ks city</p>
+  </div>
+  <div class="product">
+    <img src="img/21.webp" alt="Product 3">
+    <h3>Sharma house</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.2</p>
+    <p>Rolls, Indian, Chinese, Tandoor, Biryani, Seafood, Kerala</p>
+    <p>Jayanagar</p>
+  </div>
+  <div class="product">
+    <img src="img/31.webp" alt="Product 3">
+    <h3>Joshi Mess</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.3</p>
+    <p>Indian</p>
+    <p>Tavarekere</p>
+  </div><div class="product">
+    <img src="img/30.jpeg" alt="Product 3">
+    <h3>Natraj Chole Bhature</h3>
+    <p><i class="fa fa-star" aria-hidden="true"></i> &nbsp; 4.7</p>
+    <p>Indian, Chaat, Sweets</p>
+    <p>Jayanagar</p>
+  </div>
+</div>
+
+
+<hr>
+
+
+<div class="area">
+  <h2>Reasons to Order Food Online in Bangalore via Swiggy</h2>
+  <p>Bangalore, the IT hub of the country, is the city that is a home to millions of young techies staying far away from their homes. If you are also one of those, who does not have a proper functional kitchen, you can understand the pain of missing out on your favourite food. Imagine one day you are having a hectic day at work, and suddenly you find it’s lunchtime. The rats have already started growling in your stomach as it’s already Food O’clock, but you can’t visit the food court due to your  ongoing work. Bummer? But no worries, as Swiggy is<span id="dots">...</span><div id="more">here to help you. Just take a pause, order food online in Bangalore, and you can resume work. Swiggy assures you of lightning-fast delivery, and the delivery agents will deliver your food within 45 minutes, fresh and hot from the restaurant.<br><br>
+    <span class="bold">Get your food delivery in Bangalore to experience its food culture</span><br> The services of food delivery in Bangalore make it easy for you to taste the 
+    delicious dishes that this city has to offer. From authentic pizzas and burgers to crispy masala dosa, idli, vada and droolworthy filter coffee, the city has it all. If you want to start with the famous food of Bangalore, try Ragi Mudde, which are traditional gluten-free balls made with finger millet flour. Next on the platter can be Mangaluru buns,which is a banana-based food, served with delicious coconut chutney and kurma. Biryani lovers must try the Anand Dum Biryani served at Hostoke. Bisi Bele Bath is an authentic vegetarian dish made with a combination of rice, veggies, lentils, and ghee and has the flavour of rich spices. The combination of akki roti and chutney pudi is comfort food at its best. Don’t forget to gorge on Chow Chow Bath, a popular street food and dessert of Bangalore. <br><br>
+        <span class="bold">Places to order food online in Bangalore </span><br>You will not have a dearth of places to order food online, as there are many restaurants offering online 
+        food delivery in Bangalore. Here is a list of the restaurants that deliver and serve multi-cuisine food and will offer you an out-of-the-world gastronomical experience:
+        <br><br>
+        <ul>
+          <li>Biryani Pot </li>
+          <li>Meghana Foods</li>
+          <li>Third Wave Coffee</li>
+          <li>Asha Tiffins</li>
+          <li>Kannur Food Point</li>
+          <li>Bakingo</li>
+          <li>Onesta</li>
+          <li>Namaste</li>
+          <li>Madeena Hotel</li>
+          <li>Sandwich Guru</li>
+          <li>Zaitoon</li>
+          <li>Chinese Bae</li>
+          <li>Call Me Chow</li>
+          <li>Al Taza</li>         
+          <li>The Bowl Company</li> 
+
+        </ul>
+        <br>
+        <br>
+
+        <span class="bold">Trust Swiggy to tantalize your taste buds </span> <br>
+        If you are constantly searching for food delivery options near you, Swiggy is your best bet. We connect customers who want to place online food orders with restaurant partners. We provide a single window for ordering from a wide range of restaurants and delivering tasty food to your doorstep at the earliest. There is no restriction in order value. Hence, you can place an order for a minimum amount for yourself and your friends. The live tracking feature helps you track the live location of the delivery agent, and you will get an estimate of how long it will take for the food to be delivered. <br><br>
+        <span class="bold">FAQs:</span>
+        <span class="bold">Q. When can I expect my food to be delivered once the order has been placed?</span><br>
+        A. Once the order has been placed, the delivery agent will deliver the food within 45 minutes.<br><br>
+        <span class="bold">Q. Which areas of Bangalore are served by Swiggy?</span><br>
+        A. Currently, we are available at Yeshwanthpur, Koramangala, HSR, Banashankari, Kammanahalli/Kalyan Nagar, Battarahalli, Bellandur/Serjapur, Yelahanka, R.T. Nagar, Rajarajeshwari Nagar, Shantinagar, Wilson Garden, Geddalahalli, JP Nagar, Arekere, Whitefield, Kumaraswamy Layout & Uttarahalli, Banaswadi, Frazer Town, Majestic, Kadugodi, CV Raman Nagar, Kudlo Gate, Jayanagar, Basavanavugi, Mahadevpura, Indiranagar, BTM, Basaveshwaranagar, Sanjay Nagar, New BEL Road, Kanakapura Road, Marathahalli, Electronic City, Central Bangalore and Kadubeesanahalli.
+
+
+      </div> </p>
+<button onclick="myFunction()" id="myBtn">Read more </button>
+</div>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4><img src="img/footer.png"></h4>
+        <ul>
+          <li><a href="#">© 2023 Addhyan Kumar</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>get help</h4>
+        <ul>
+          <li><a href="#">Company</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Swiggy One</a></li>
+          <li><a href="#">Swiggy Instamart</a></li>
+          <li><a href="#">Swiggy Genie</a></li>
+
+          
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>online shop</h4>
+        <ul>
+          <li><a href="#">CWe deliver to:
+          </a></li>
+          <li><a href="#">Bangalore</a></li>
+          <li><a href="#">Gurgaon</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Delhi</a></li>
+          <li><a href="#">Mumbai  </a></li>
+          <li><a href="#">598 cities</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+   
+   
+   <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right ="-200px";
+        }
+        </script>
+       
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } 
+  else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+  
+</body>
+</html>
